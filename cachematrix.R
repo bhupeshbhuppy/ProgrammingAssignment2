@@ -14,10 +14,11 @@ makeCacheMatrix <- function(x = matrix()) {
   get<-function() {
     if(!is.null(cache_mt))
     return(cache_mt)
-  }
-    else{
+    else
       print("Matrix not set. Please set the matrix before use.")
-    }
+    
+  }
+    
   setInverse<-function(inv){
     cache_inv<<- inv
   }
